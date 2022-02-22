@@ -12,9 +12,9 @@ pipeline {
     stages {
         stage('Greeting') {
             steps {
-                echo "Hello, ${env.GREETINGS_TO} !"
+                echo "Hello ${env.GREETINGS_TO} ${env.BUILD_ID}"
                 // also available as env variable to a process:
-                sh 'echo "Hello, $GREETINGS_TO !"'
+                sh 'echo "Hello $GREETINGS_TO $BUILD_ID"'
             }
         }
     }
