@@ -17,7 +17,7 @@ pipeline {
                     echo "form feed>\f<"
                     echo "backslash>\\<"
                     echo "single quote>\'<"
-                    echo "double quote>\"<"
+                    echo "double quote>\"<!"
                 }
             }
         }
