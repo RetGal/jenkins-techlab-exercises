@@ -23,6 +23,7 @@ pipeline {
                     def pipelineType = 'declarative'
                     echo "yeah we executed a script within the ${pipelineType} pipeline"
                 }
+            }
         }
         stage('Build') {
             steps {
