@@ -1,3 +1,5 @@
+@Library('jenkins-techlab-exercise-library') _
+
 pipeline {
     agent any
     options {
