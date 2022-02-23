@@ -17,6 +17,13 @@ pipeline {
         maven 'maven36'
     }
     stages {
+        stage('Script') {
+            steps {
+                script {
+                    def pipelineType = 'declarative'
+                    echo "yeah we executed a script within the ${pipelineType} pipeline"
+                }
+        }
         stage('Build') {
             steps {
                 milestone(10)  // The first milestone step starts tracking concurrent build order
