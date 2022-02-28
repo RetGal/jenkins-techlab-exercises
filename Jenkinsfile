@@ -12,4 +12,11 @@ pipeline {
         timestamps()  // Timestamper Plugin
         disableConcurrentBuilds()
     }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'noop!'
+            }
+        }
+    }
 }
