@@ -1,9 +1,10 @@
 pipeline {
     agent {
+        // docker build -f Dockerfile -t test-app:latest .
         dockerfile {
             filename 'Dockerfile'
-            dir 'build'
-            args '-t test-app:latest .'
+            dir '.'
+            args '-t test-app:latest'
         }
     }
     options {
